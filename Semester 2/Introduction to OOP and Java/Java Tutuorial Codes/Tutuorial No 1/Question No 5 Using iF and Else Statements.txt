@@ -1,0 +1,37 @@
+public class Question5PartB {
+    public static void main(String[]args)
+    {
+        char grade='A';
+
+        if(grade=='A')
+        {
+            System.out.print("Excellent!");
+        }
+        else if (grade=='D')
+        {
+            System.out.println("You Passed ");
+
+        }
+        else if (grade=='F')
+        {
+            System.out.println("Better Try Again !");
+        }
+        else
+        {
+            System.out.println("Invalid Grade ");
+        }
+
+        /*
+        A note to Remember
+        ---We cannot use Break Statement in here, most of the time
+        it is used to come out of a loop. in here we do not use default
+        instead of that we can use else statement. 
+
+         */
+
+
+        System.out.print("\nYour Grade is: " +grade);
+
+
+    }
+}

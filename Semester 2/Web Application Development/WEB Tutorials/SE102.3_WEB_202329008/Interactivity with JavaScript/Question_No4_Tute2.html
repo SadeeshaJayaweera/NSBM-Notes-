@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Remove Items from Dropdown List</title>
+</head>
+
+<body>
+    <h2>Dropdown List</h2>
+    <select id="myDropdown">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grape</option>
+    </select>
+
+    <button onclick="removeItem()">Remove Selected Item</button>
+
+    <script>
+        function removeItem() {
+            // Get the dropdown list by its ID
+            const dropdown = document.getElementById("myDropdown");
+
+            // Check if an option is selected
+            if (dropdown.selectedIndex !== -1) {
+                // Remove the selected item using the selectedIndex property
+                dropdown.options[dropdown.selectedIndex].remove();
+            }
+        }
+    </script>
+</body>
+
+</html>

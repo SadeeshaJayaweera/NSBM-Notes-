@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1669608516 source:c:\users\pasan\downloads\lab02.2\main.c
+	<stdio.h>
+	<stdlib.h>
+

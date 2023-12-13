@@ -1,0 +1,54 @@
+package com.mycompany.bankobj;
+public class BankAccount 
+{
+    private int accNo;
+    private String holdersName;
+    private float balance;
+    public void setData(int a,String hn,float b)
+    {
+        accNo=a;
+        holdersName=hn;
+        balance=b;
+    }
+    public void deposit(float d)
+    {
+        balance=balance+d;
+        System.out.println("New Balance is "+balance);
+    }
+    public float checkBalance()
+    {
+        return balance;
+    }
+    public void display()
+    {
+        System.out.println("Account No "+accNo);
+        System.out.println("Account Holders Name "+holdersName);
+        System.out.println("Balance "+balance);
+    }
+}
+
+----------------------
+package com.mycompany.bankobj;
+public class BankObj 
+{
+    public static void main(String[] args) 
+    {
+        BankAccount b=new BankAccount();
+        b.setData(1234, "abc", 5000.00f);
+        b.deposit(2500.00f);
+        System.out.println("New Balance is "+b.checkBalance());
+        b.display();
+    }
+}
+---------------------
+ public void withdraw(float amt)
+    {
+        if(amt<=balance)
+        {
+            balance=balance-amt;
+            System.out.println("New Balance "+balance);
+        }   
+        else
+            System.out.println("Insufficient credit ");
+    }
+----------------

@@ -1,0 +1,45 @@
+package com.mycompany.empobj;
+public class Employee 
+{
+    //data
+    private int empNo;
+    private String empName;
+    private float basicSalary;
+    //methods
+    public void setData(int e,String en,float bs)
+    {
+        empNo=e;
+        empName=en;
+        basicSalary=bs;
+    }
+    public void displayDetails()
+    {
+        System.out.println("Employee Number "+empNo);
+        System.out.println("Employee Name "+empName);
+        System.out.println("Basic Salary "+basicSalary);
+    }
+    public void setBasicSalary(float basicSalary)
+    {
+        this.basicSalary=basicSalary;
+    }
+    public float getBS()
+    {
+        return basicSalary;
+    }
+}
+--------------------------
+package com.mycompany.empobj;
+public class EmpObj 
+{
+    public static void main(String[] args) 
+    {
+        //
+        Employee e1=new Employee();
+        //
+        e1.setData(1234, "Sunil", 12500.00f);
+        e1.displayDetails();
+        e1.setBasicSalary(15000.00f);
+        System.out.println(" Basic Salary "+e1.getBS());
+    }
+}
+------------------

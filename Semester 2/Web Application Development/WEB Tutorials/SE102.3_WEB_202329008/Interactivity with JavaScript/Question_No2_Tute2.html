@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Enable/Disable Video on Hover</title>
+</head>
+
+<body>
+    <h2>Video Demo</h2>
+    <video id="videoPlayer" width="320" height="240" controls>
+        <source src="https://youtu.be/Vs_PzLHaKPE?list=RDVs_PzLHaKPE" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        // Get the video element
+        const video = document.getElementById("videoPlayer");
+
+        // Function to play the video
+        function playVideo() {
+            video.play();
+        }
+
+        // Function to pause the video
+        function pauseVideo() {
+            video.pause();
+        }
+
+        // Add event listeners to enable/disable video on hover
+        video.addEventListener("mouseover", playVideo);
+        video.addEventListener("mouseout", pauseVideo);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Rows to Table</title>
+</head>
+
+<body>
+    <h2>Table</h2>
+    <table id="myTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <button onclick="addRow()">Add Row</button>
+
+    <script>
+        function addRow() {
+            // Get the table by its ID
+            const table = document.getElementById("myTable");
+
+            // Create a new row and cells
+            const newRow = table.insertRow();
+
+            // Create two cells for Name and Age
+            const nameCell = newRow.insertCell(0);
+            const ageCell = newRow.insertCell(1);
+
+            // Set the content for the new cells (you can change the values as needed)
+            nameCell.innerHTML = "New Person";
+            ageCell.innerHTML = "Unknown";
+        }
+    </script>
+</body>
+
+</html>

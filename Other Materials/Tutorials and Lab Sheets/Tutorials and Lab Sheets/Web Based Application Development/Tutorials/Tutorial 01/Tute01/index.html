@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Student Data Entry Form</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+
+  <body>
+    <h1>Student Information</h1>
+    <hr />
+    <h3>Enter Your Details</h3>
+    <form method="get" action="#">
+      Name: <input type="text" name="name" />
+      <p>
+        Gender:
+        <input type="radio" name="sex" value="male" /> Male
+        <input type="radio" name="sex" value="female" /> Female
+      </p>
+      <p>
+        Group and Batch:
+        <select name="batch">
+          <option value="b1">22.1 A1</option>
+          <option value="b2">22.1 A2</option>
+          <option value="b3">22.1 B1</option>
+          <option value="b4">22.1 B2</option>
+        </select>
+      </p>
+      <p>Programming Languages:</p>
+      <input type="checkbox" name="lang" value="C" />
+      C <br />
+      <input type="checkbox" name="lang" value="Java" />
+      Java <br />
+      <input type="checkbox" name="lang" value="Python" />
+      Python <br />
+      <input type="checkbox" name="lang" value="CSharp" />
+      C#
+      <p>
+        <input type="reset" value="Reset" />
+        &nbsp;
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+    <hr />
+    <footer>
+      <img src="/images/nsbm_logo.png" class="logo" width="100" height="100" />
+      <!-- <center>All rights reserved | 2022</center> -->
+      <p style="text-align: center">All rights reserved | 2022</p>
+    </footer>
+  </body>
+</html>

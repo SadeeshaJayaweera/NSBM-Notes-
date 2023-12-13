@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class TestProject{
+    public static void main(String[]args)
+    {
+        int itemNo,quantity=0,ProductPrice,total=0;
+        String descrip;
+        
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.print("Please Enter Item Number: ");
+        itemNo=sc.nextInt();
+        
+        System.out.print("Please Enter Quantity: ");
+        quantity=sc.nextInt();
+        
+        System.out.print("Please Enter Item description: ");
+        descrip=sc.next();
+        
+        System.out.print("Please Enter Item Price: ");
+        ProductPrice=sc.nextInt();
+        
+        total=ProductPrice*quantity;
+        
+        
+        System.out.print("The item No is: " +itemNo+ " Product Description is: " +descrip+ " Total Price is " +total);
+    }
+}

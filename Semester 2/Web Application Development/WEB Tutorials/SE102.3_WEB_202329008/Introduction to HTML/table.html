@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+
+        div{
+            background-color: gray;
+            
+        }
+
+        h3{
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .New-Table table{
+            text-align: center;
+            align-content: center;
+            
+        }
+
+        tr.heading-row{
+            color: black;
+            background-color: white;
+        }
+
+        tr.last-row{
+            color: black;
+            background-color: greenyellow;
+        }
+
+        a.last-row{
+        color: red;
+
+        }
+    
+
+
+    </style>
+</head>
+<body>
+<!--Table one-->
+<table>
+    <tr class="heading-row">
+        <th>First Name </th>
+        <th>Last Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Amal</td>
+        <td>Fernando</td>
+        <td>39</td>
+    </tr>
+    <tr>
+        <td>Sahan</td>
+        <td>Bandara</td>
+        <td>33</td>
+    </tr>
+    <tr>
+        <td>Kamal</td>
+        <td>Perera</td>
+        <td>36</td>
+    </tr>
+    <tr>
+        <td>Nimal</td>
+        <td>Rathnayake</td>
+        <td>36</td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<!--Table Number Two-->
+<table>
+    <tr>
+        <th>America</th>
+        <th>Canada</th>
+        <th>Alaska</th>
+    </tr>
+    <tr>
+        <td style="color: red;" colspan="2">Mexico</td>
+        <td rowspan="2">Jamaica</td>
+    </tr>
+    <tr>
+        <td>California</td>
+        <td style="color: green;">Brazil</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<!---The Main table -->
+<div class="New-Table">
+    <h3>Timetable</h3>
+    <table style="background-color: yellow;" align="center">
+        <tr class="heading-row">
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Maths</td>
+            <td>Geography</td>
+            <td rowspan="3">Litereature</td>
+            <td>Maths</td>
+            <td>Drama</td>
+        </tr>
+        <tr>
+            <td>IT</td>
+            <td>English</td>
+            <td>Dancing</td>
+        </tr>
+        <tr>
+            <td>Sinhala</td>
+            <td rowspan="2">Health</td>
+            <td rowspan="2">Music</td>
+            <td rowspan="2">Religion</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>IT Lab</td>
+        </tr>
+        <tr>
+            <td style="color: red; background-color: blue   ;"  class="Interval" colspan="5">Interval</td>
+        </tr>
+        <tr>
+            <td>Religion</td>
+            <td>Maths</td>
+            <td>Health</td>
+            <td>Tamil</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td rowspan="2">History</td>
+            <td rowspan="3">Drama</td>
+            <td rowspan="2">Library</td>
+            <td>IT Lab</td>
+            <td>Tamil</td>
+        </tr>
+        <tr>
+            <td>Sinhala</td>
+            <td rowspan="2">Art</td>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>Maths</td>
+            <td>Science</t  d>
+        </tr>
+        <tr class="last-row">
+           <td colspan="5">For More details: <a  href="#Website">www.schoolnet.com/</a> </td> 
+        </tr>
+
+    </table>
+    <br>
+    <br>
+</div>
+</body>
+</html>

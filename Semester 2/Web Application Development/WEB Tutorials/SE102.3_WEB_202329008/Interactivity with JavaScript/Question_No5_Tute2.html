@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Table Border</title>
+    <style>
+        /* Default table border */
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        /* Table cell padding and alignment for demonstration purposes */
+        th,
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Table with Border</h2>
+    <table id="myTable">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <button onclick="changeBorder()">Change Border</button>
+
+    <script>
+        function changeBorder() {
+            // Get the table by its ID
+            const table = document.getElementById("myTable");
+
+            // Check the current border style
+            const currentBorderStyle = table.style.border;
+
+            // If the current border is "none" or empty, set it to "1px solid red"
+            // Otherwise, remove the border by setting it to an empty string
+            if (currentBorderStyle === "none" || currentBorderStyle === "") {
+                table.style.border = "1px solid red";
+            } else {
+                table.style.border = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

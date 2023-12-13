@@ -1,0 +1,11 @@
+h1 {
+    color: rgb(4, 191, 129);
+    /* font-size: 50px; */
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
